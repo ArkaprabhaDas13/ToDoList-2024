@@ -44,8 +44,10 @@ function App() {
     function deleteTodo(id)
     {
       setTodos((currentTodos)=>{
-        return currentTodos.filter((todo)=>{todo.id!==id})
+        return currentTodos.filter(todo=>todo.id!==id)
       })
+      // const updatedTodos = todo.filter(todo => todo.id !== id);
+      // setTodos(updatedTodos);
     }
 
 
